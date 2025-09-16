@@ -5,5 +5,5 @@ H1D023050 <br>
 Shift H ke Shift C <br>
 
 Tampilkan Aplikasi
-![Screenshot Aplikasi 1](BerkasScreenshots/gambar1.jpg)
-![Screenshot Aplikasi 2](BerkasScreenshots/gambar2.jpg)
+![Screenshot Aplikasi 1](BerkasScreenshots/gambar1.png)
+![Screenshot Aplikasi 2](BerkasScreenshots/gambar2.png)
