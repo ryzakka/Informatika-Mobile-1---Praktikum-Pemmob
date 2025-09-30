@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -8,7 +7,7 @@
     android:padding="16dp">
 
     <ImageView
-        android:id="@+id/img_gedung_teknik"
+        android:id="@+id/img_gedung_teknik.jpg"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:adjustViewBounds="true"
@@ -16,7 +15,7 @@
         android:src="@drawable/gedung_teknik"/>
 
     <TextView
-        android:id="@+id/tv_welcome"
+        android:id="@+id/welcome_text"
         style="@style/MaterialAlertDialog.Material3.Body.Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +24,7 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/tv_description"
+        android:id="@+id/inf_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -34,9 +33,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_to_page2"
-        android:text="@string/next"
+        android:text="next"
         android:layout_gravity="right"
-        app:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
 </LinearLayout>

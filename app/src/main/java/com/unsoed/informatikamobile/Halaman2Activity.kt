@@ -1,22 +1,22 @@
 package com.unsoed.informatikamobile
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
-import android.content.Intent
 import com.unsoed.informatikamobile.databinding.ActivityHalaman2Binding
 
 class Halaman2Activity : AppCompatActivity() {
     private lateinit var binding: ActivityHalaman2Binding
-    private val latitude: String = "-7.429427"
-    private val longitude: String = "109.338082"
-    private val gMapsUrl: String = "https://maps.google.com/maps?q=loc:"
-    private val packageMaps: String = "com.google.android.apps.maps"
 
+    private val latitude = "-7.429427"
+    private val longitude = "109.338082"
+    private val gMapsUrl = "http://maps.google.com/maps?q=loc:"
+    private val packageMaps = "com.google.android.apps.maps"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityHalaman2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -49,32 +49,31 @@ class Halaman2Activity : AppCompatActivity() {
     private fun initListener() {
         binding.layoutLocation.root.setOnClickListener {
             val gMapsIntentUri = "$gMapsUrl$latitude,$longitude".toUri()
-
             val mapIntent = Intent(Intent.ACTION_VIEW, gMapsIntentUri)
-            mapIntent.setPackage(packageMaps)
-            startActivity(mapIntent)
+            startActivity(mapIntent.setPackage(packageMaps))
         }
-        binding.layoutIg.root.setOnClickListener {
-            val instagramUri = getString(R.string.ig_himpunan).toUri()
 
-            val intent = Intent(Intent.ACTION_VIEW, instagramUri)
+        binding.layoutIg.root.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = getString(R.string.ig_himpunan).toUri()
             startActivity(intent)
         }
+
         binding.layoutEmail.root.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO).apply {
-                data = "mailto:${getString(R.string.email)}".toUri()
+                data = Uri.parse("mailto:${getString(R.string.email)}")
             }
             startActivity(intent)
         }
 
         binding.layoutPhone.root.setOnClickListener {
-            val intent = Intent().apply {
-                action = Intent.ACTION_DIAL
-                data = "tel:${getString(R.string.telepon)}".toUri()
+            val intent = Intent(Intent.ACTION_DIAL).apply {
+                data = Uri.parse("tel:${getString(R.string.telepon)}")
             }
             startActivity(intent)
         }
-        binding.btnBack.setOnClickListener{
+
+        binding.btnBack.setOnClickListener {
             finish()
         }
     }
