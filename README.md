@@ -5,21 +5,21 @@ Shift H ke Shift C <br>
 Tugas 1 - Prak. Pemrograman Mobile - Pertemuan 2
 
 Tampilan Aplikasi Awal
-![Screenshot Aplikasi 1](BerkasScreenshots/gambar1.png)
-![Screenshot Aplikasi 2](BerkasScreenshots/gambar2.png)
+!(BerkasScreenshots/gambar1.png)
+!(BerkasScreenshots/gambar2.png)
 
 Tugas 2 - Prak. Pemrograman Mobile - Pertemuan 3
 
 Tampilan Aplikasi 
-![Tampilan Aplikasi 1](BerkasScreenshots/video1.gif)
+!(BerkasScreenshots/video1.gif)
 
 Tugas 3 - Prak. Pemrograman Mobile - Pertemuan 4
 
 Tampilan Aplikasi 
-![Tampilan Aplikasi 1](BerkasScreenshots/video2.gif)
+!(BerkasScreenshots/video2.gif)
 
 Tugas 4 - Prak. Pemrograman Mobile - Pertemuan 5
 
 Tampilan Aplikasi 
-![Tampilan Aplikasi 1](BerkasScreenshots/video3.gif)
+!(BerkasScreenshots/video3.gif)
 
