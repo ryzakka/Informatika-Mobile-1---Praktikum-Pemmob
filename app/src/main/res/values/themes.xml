@@ -1,9 +1,21 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.IFUnsoedMobile" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <!-- Your main application theme -->
+    <style name="Theme.IFUnsoedMobile" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- ... other theme attributes -->
+
+        <!-- Add this line to connect your app theme to your custom bottom sheet dialog theme -->
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
     </style>
 
-    <style name="Theme.IFUnsoedMobile" parent="Base.Theme.IFUnsoedMobile" />
+    <!-- Custom Theme aplication for BottomSheetDialog -->
+    <style name="ThemeOverlay.App.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.App.BottomSheet.Modal</item>
+    </style>
+
+    <!-- Custom Style for BottomSheet -->
+    <style name="Widget.App.BottomSheet.Modal" parent="Widget.Material3.BottomSheet.Modal">
+        <!-- You can customize the bottom sheet's appearance here -->
+        <!-- For example, to set a custom background -->
+        <!-- <item name="android:background">@drawable/my_custom_bottom_sheet_background</item> -->
+    </style>
 </resources>
